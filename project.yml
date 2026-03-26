@@ -1,0 +1,27 @@
+name: Pix
+options:
+  bundleIdPrefix: com.thezone
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "15.0"
+  createIntermediateGroups: true
+
+targets:
+  Pix:
+    type: application
+    platform: macOS
+    sources:
+      - Pix
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.thezone.pix
+        INFOPLIST_KEY_LSUIElement: true
+        INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright © 2026 THE ZONE. All rights reserved."
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        SWIFT_VERSION: "5.9"
+        CODE_SIGN_ENTITLEMENTS: Pix/Pix.entitlements
+        PRODUCT_NAME: Pix
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: true
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
